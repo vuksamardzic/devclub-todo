@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  font-size: 20px;
+  color: #fff;
+  max-width: 40vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 0) {
+  .App {
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    max-width: 40vw;
+  }
+}
+
+.App__header {
+  font-size: calc(25px + 2vmin);
+}
+
+.App__input {
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  height: 45px;
+  border-radius: 2px 0 0 2px;
+  font-size: 18px;
+}
+
+.App__button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  height: 45px;
+  border-radius: 0 2px 2px 0;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+}
+
+.App__button:hover {
+  transform: scale(1.1);
+}
+
+.App__button--blue {
+  background-color: #0082d0;
+  color: #fff;
+}
+
+.App__body {
+  margin: 20px 0;
+
+}

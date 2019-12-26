@@ -1,0 +1,21 @@
+.Todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 12px 15px;
+  background-color: #333842;
+  border-radius: 2px;
+}
+
+.Todo__remove {
+  width: calc(10px + 2vmin);
+  height: auto;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+}
+
+.Todo__remove:hover {
+  transform: scale(1.1);
+}
