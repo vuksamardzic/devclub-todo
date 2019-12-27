@@ -1,11 +1,74 @@
 .App {
   text-align: center;
-  min-height: 100vh;
   font-size: 20px;
-  color: #fff;
+  color: #202124;
   max-width: 40vw;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.App__header {
+}
+
+.App__header-text {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.App__input {
+  outline: 0;
+  padding: 0 10px;
+  height: 36px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  color: #202124;
+}
+
+.App__input:focus {
+  margin: -1px;
+  border: 2px solid #1a73e8;
+}
+
+.App__button {
+  font-weight: 700;
+  min-width: 90px;
+  letter-spacing: 0.025rem;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0 20px;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.2s ease-inf-out;
+}
+
+.App__button--blue {
+  color: #fff;
+  background-color: #1a73e8;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.App__button--blue:hover {
+  background-color: #1a65c8;
+  box-shadow: 0 1px 1px 0 rgba(66, 133, 244, 0.45), 0 1px 3px 1px rgba(66, 133, 244, 0.3);
+}
+
+.App__body {
+  border-top: 1px solid #dadce0;
+  margin: 20px -20px 0;
+}
+
+.App__body-text {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 @media (min-width: 0) {
@@ -26,40 +89,8 @@
   }
 }
 
-.App__header {
-  font-size: calc(25px + 2vmin);
-}
-
-.App__input {
-  border: 0;
-  outline: 0;
-  padding: 0 20px;
-  height: 45px;
-  border-radius: 2px 0 0 2px;
-  font-size: 18px;
-}
-
-.App__button {
-  cursor: pointer;
-  border: 0;
-  outline: 0;
-  padding: 0 20px;
-  height: 45px;
-  border-radius: 0 2px 2px 0;
-  font-size: 18px;
-  transition: 0.2s ease-in-out;
-}
-
-.App__button:hover {
-  transform: scale(1.1);
-}
-
-.App__button--blue {
-  background-color: #0082d0;
-  color: #fff;
-}
-
-.App__body {
-  margin: 20px 0;
-
+@media (min-width: 1440px) {
+  .App {
+    max-width: 30vw;
+  }
 }

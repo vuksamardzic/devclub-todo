@@ -34,10 +34,10 @@ const App = () => {
   return (
     <div className="App">
       <header className="App__header">
-        <h3>Todo app</h3>
+        <h3 className="App__header-text">Todo app</h3>
         <form onSubmit={onSubmit} className="flex-cc">
           <input type="text"
-                 placeholder="example: try react"
+                 placeholder="ex: code todo app"
                  className="App__input fg-1 d-flex"
                  value={name}
                  onChange={onInputNameChange}/>
@@ -47,7 +47,7 @@ const App = () => {
         </form>
       </header>
       <div className="App__body">
-        {list.length ? '' : 'add something to do :)'}
+        {list.length ? '' : <p className="App__body-text">add something to do :)</p>}
         {list.map(data => <Todo data={data}
                                 emitTodoDelete={handleTodoDelete}
                                 key={data.id}/>)}
